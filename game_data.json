@@ -1,0 +1,37 @@
+{
+    "rooms": {
+        "room_entrance": {
+            "name": "Castle Entrance",
+            "meta_description": "castle entrance, lined with torches, stone walls, imposing wooden doors, possible presence of guards",
+            "exits": {
+                "north": "room_hallway"
+            }
+        },
+        "room_hallway": {
+            "name": "Great Hallway",
+            "meta_description": "long hallway, stained glass windows, tapestries on the walls, echoes of footsteps, high vaulted ceiling",
+            "exits": {
+                "south": "room_entrance",
+                "east": "room_armory"
+            },
+			"npc": "npc_guard"
+        },
+        "room_armory": {
+            "name": "Armory",
+            "meta_description": "room filled with weapons and armor, a faint smell of metal and oil, possible magical artifacts",
+            "exits": {
+                "west": "room_hallway"
+            }
+        }
+    },
+    "npcs": {
+        "npc_guard": {
+            "name": "Castle Guard",
+            "meta_description": "stern, loyal, short-tempered guard. Has knowledge of the castle's secrets but rarely shares."
+        }
+    },
+    "player": {
+        "start_room": "room_entrance",
+        "inventory": []
+    }
+}
